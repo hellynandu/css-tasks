@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f6;
+  color: #2f3f4f;
+}
+
+
+.header {
+  background: linear-gradient(to right, #6a7bd1, #7a4ca0);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin: 20px;
+  background: #eef2f1;
+  border-radius: 10px;
+  min-height: 80vh;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+.sidebar {
+  background: #2f3f4f;
+  color: white;
+  padding: 25px;
+  border-radius: 10px 0 0 10px;
+}
+
+.sidebar h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+
+.sidebar li span {
+  width: 16px;
+  height: 16px;
+  background: #4fa3e3;
+  border-radius: 4px;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: #3f5366;
+}
+
+
+.content {
+  padding: 35px;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+
+.card p {
+  color: #888;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #2f3f4f;
+}
