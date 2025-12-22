@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f4f5fb;
+}
+.page {
+  padding: 40px;
+}
+
+.header {
+  background: linear-gradient(90deg, #6c63ff, #7f56d9);
+  color: white;
+  padding: 32px 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  margin: 8px 0 16px;
+  opacity: 0.9;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 50px 20px;
+}
+.pricing-card{
+  width: 320px;
+  background: #ffffff;
+  padding: 36px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+.pricing-card h5{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #333;
+}
+.pricing-card h1{
+font-size: 52px;
+font-weight: 800;
+margin-bottom: 6px;
+color: #000;
+}
+.pricing-card .per {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 28px;
+}
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.pricing-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 15px;
+  color: #222;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #22c55e;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+
+.pricing-card button {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+}
+
+.btn-filled {
+  background: #ffffff;
+  color: #6c63ff;
+  border: 2px solid #ffffff;
+}
+
+
+.pricing-card:hover {
+  background: linear-gradient(135deg, #6c63ff, #7f56d9);
+  transform: translateY(-12px);
+}
+
+.pricing-card:hover h5,
+.pricing-card:hover h1,
+.pricing-card:hover .per,
+.pricing-card:hover ul li {
+  color: #ffffff;
+}
+
+.pricing-card:hover ul li {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.pricing-card:hover button {
+  background: #ffffff;
+  color: #6c63ff;
+  border-color: #ffffff;
+}
+
+
+.featured {
+  background: linear-gradient(135deg, #6c63ff, #7f56d9);
+  transform: translateY(-12px);
+}
+
+.featured h5,
+.featured h1,
+.featured .per,
+.featured ul li {
+  color: #ffffff;
+}
+
+.featured ul li {
+  border-color: rgba(255, 255, 255, 0.3);
+}
