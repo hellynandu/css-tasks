@@ -41,7 +41,7 @@ body {
 .launch-badge {
   display: inline-block;
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ffffff33;
   color: #fff;
   border-radius: 999px;
   font-size: 0.75rem;
