@@ -85,8 +85,12 @@ body {
   background: #ffffff;
   border-radius: 16px;
   padding: 32px;
-  min-width: 360px;
 }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 420px;
+  }
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
@@ -96,7 +100,5 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .hero-image {
-    width: 100%;
-  }
+
 }
