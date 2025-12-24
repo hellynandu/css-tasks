@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Layout - Grid and Flexbox combo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Task 8: Form Layout - Grid & Flexbox Combo</h1>
+    <p>Use Grid for structure and Flexbox for input groups</p>
+
+  </div>
+  <form class="form-grid">
+    <h1>Create Your Account</h1>
+    <p>Fill in the details below to get started</p>
+    <div class="form-group">
+      <div class="name-row">
+        <div class="form-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="John" required />
+        </div>
+        <div class="form-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Doe" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required class="full-width" />
+      </div>
+      <div class="contact-row">
+        <div class="form-name">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" placeholder="+44 123 456 7890" required />
+        </div>
+        <div class="form-name">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="uk" selected>United Kingdom</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+          </select>
+        </div>
+      </div>
+<div class="form-row">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="error" name="password" placeholder="Enter password" required />
+      <div class="password-error">Password must be at least 8 characters</div>
+</div>
+<div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us about yourself..." required></textarea>
+    </div>
+    <div class="form-row">
+    <div class="form-buttons">
+    <button type="button" class="reset-btn">Cancel</button>
+ <button type="button" class="create-btn">Create Account</button>
+    </div>
+    </div>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body {
+  background-color: #ffffff;
+  margin: 30px;
+  color: #222;
+}
+.header {
+  background: linear-gradient(135deg, #6a6adf 0%, #7f5ae6 100%);
+  color: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.header p {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.form-grid {
+  max-width: 620px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.form-grid h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.form-grid p {
+  font-size: 0.85rem;
+  margin-bottom: 28px;
+  color: #666;
+}
+.form-group {
+  display: grid;
+  gap: 18px;
+}
+.name-row,
+.contact-row {
+  display: flex;
+  gap: 20px;
+}
+.form-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+input,
+select,
+textarea {
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1.5px solid #d9d9d9;
+  transition: border-color 0.2s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #5b6cff;
+  outline: none;
+}
+input.error {
+  border-color: #e04747;
+}
+.password-error {
+  font-size: 0.75rem;
+  color: #e04747;
+  margin-top: 4px;
+}
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 28px;
+}
+.form-buttons button {
+  padding: 12px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.create-btn {
+  background-color: #6a6adf;
+  color: white;
+}
+.create-btn:hover {
+  background-color: #5858c9;
+}
+.reset-btn {
+  background-color: #e5e5e5;
+  color: #333;
+}
+.reset-btn:hover {
+  background-color: #d4d4d4;
+}
