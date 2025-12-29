@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Timeline</title>
+    <link href="output.css" rel="stylesheet" />
+
+    <style>
+        .timeline-line {
+            background: linear-gradient(to bottom, #f472b6, #ef4444);
+        }
+
+        .timeline-item {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseRing {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.35);
+            }
+
+            60% {
+                transform: scale(1.25);
+                opacity: 0.7;
+                box-shadow: 0 0 0 12px rgba(244, 114, 182, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(244, 114, 182, 0);
+            }
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+        }
+
+        .timeline-dot::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f472b6, #ef4444);
+            display: block;
+            animation: pulseRing 1.8s infinite ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .timeline-dot::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: block;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+
+        .card {
+            position: relative;
+        }
+
+        :root {
+            --card-border: #fbcfe8;
+            --card-border-strong: #f9a8d4;
+        }
+
+        .card {
+            position: relative;
+            background: white;
+        }
+
+
+        .card-left::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            right: -12px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 12px;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+
+        .card-right::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: -12px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 12px 10px 0;
+            border-color: transparent #ffffff transparent transparent;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .card-left::after,
+            .card-right::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <div class="bg-gradient-to-r from-pink-400 to-red-400 p-6 rounded-xl mb-16 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold text-white">Task 12: Animated Timeline</h1>
+        <p class="text-white opacity-90">Advanced positioning with CSS animations</p>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto">
+        <div class="timeline-line absolute left-1/2 -translate-x-1/2 h-full w-1 rounded-full"></div>
+
+        <div class="space-y-24">
+
+
+            <div class="relative flex justify-between items-start">
+                <div class="w-5/12 timeline-item">
+                    <div class="card card-left bg-white p-6 rounded-xl shadow-md">
+                        <h6 class="text-pink-500 font-bold">January 2024</h6>
+                        <h4 class="text-lg font-bold mb-2">Project Kickoff</h4>
+                        <p class="text-sm text-gray-500">
+                            Initial planning and team assembly. Defined project scope, goals,
+                            and deliverables for the upcoming quarter.
+                        </p>
+                    </div>
+                </div>
+
+                <span class="timeline-dot"></span>
+            </div>
+
+
+            <div class="relative flex justify-between items-start">
+                <span class="timeline-dot"></span>
+
+                <div class="w-5/12 ml-auto timeline-item">
+                    <div class="card card-right bg-white p-6 rounded-xl shadow-md">
+                        <h6 class="text-pink-500 font-bold">March 2024</h6>
+                        <h4 class="text-lg font-bold mb-2">Design Phase Complete</h4>
+                        <p class="text-sm text-gray-500">
+                            Completed all design mockups and prototypes. Received stakeholder
+                            approval for the final design direction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="relative flex justify-between items-start">
+                <div class="w-5/12 timeline-item">
+                    <div class="card card-left bg-white p-6 rounded-xl shadow-md">
+                        <h6 class="text-pink-500 font-bold">June 2024</h6>
+                        <h4 class="text-lg font-bold mb-2">Development Milestone</h4>
+                        <p class="text-sm text-gray-500">
+                            Reached 50% development completion. All core features implemented
+                            and undergoing testing.
+                        </p>
+                    </div>
+                </div>
+
+                <span class="timeline-dot"></span>
+            </div>
+
+
+            <div class="relative flex justify-between items-start">
+                <span class="timeline-dot"></span>
+
+                <div class="w-5/12 ml-auto timeline-item">
+                    <div class="card card-right bg-white p-6 rounded-xl shadow-md">
+                        <h6 class="text-pink-500 font-bold">December 2024</h6>
+                        <h4 class="text-lg font-bold mb-2">Product Launch</h4>
+                        <p class="text-sm text-gray-500">
+                            Successfully launched to production. Received positive feedback
+                            from initial user base and achieved target metrics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
