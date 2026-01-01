@@ -1,1 +1,2 @@
 cd task-13 && ./tailwindcss -i ./input.css -o ./output.css --watch
+rm .git/index.lock
