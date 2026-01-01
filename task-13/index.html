@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Data Dashboard</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C7CF5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <div class="bg-gradient-to-r from-pink-400 to-rose-500 rounded-xl m-6 p-6 text-white">
+        <h1 class="text-3xl font-bold">Task 13: Advanced Data Dashboard</h1>
+        <p class="text-sm opacity-90 mt-1">
+            Complex Grid system with multiple component types and data visualization
+        </p>
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+
+
+        <div class="bg-white rounded-xl p-5 shadow">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-gray-500 text-sm">Total Revenue</p>
+                    <h2 class="text-3xl font-bold">£45,231</h2>
+                </div>
+                <div class="bg-indigo-500 text-white p-3 rounded-lg text-xl">£</div>
+            </div>
+            <p class="text-green-500 text-sm mt-3">↑ 12.5% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-gray-500 text-sm">New Users</p>
+                    <h2 class="text-3xl font-bold">2,845</h2>
+                </div>
+                <div class="bg-green-500 text-white p-3 rounded-lg">👥</div>
+            </div>
+            <p class="text-green-500 text-sm mt-3">↑ 8.2% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-gray-500 text-sm">Total Orders</p>
+                    <h2 class="text-3xl font-bold">1,247</h2>
+                </div>
+                <div class="bg-pink-400 text-white p-3 rounded-lg">📦</div>
+            </div>
+            <p class="text-red-500 text-sm mt-3">↓ 3.1% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-gray-500 text-sm">Conversion Rate</p>
+                    <h2 class="text-3xl font-bold">3.84%</h2>
+                </div>
+                <div class="bg-sky-400 text-white p-3 rounded-lg">📈</div>
+            </div>
+            <p class="text-green-500 text-sm mt-3">↑ 0.4% from last month</p>
+        </div>
+
+    </div>
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 mt-6">
+
+
+        <div class="bg-white rounded-xl shadow p-6 lg:col-span-2">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-semibold">Revenue Overview</h3>
+
+                <div class="flex gap-2">
+                    <button class="px-4 py-1 border rounded-md text-sm">Day</button>
+                    <button class="px-4 py-1 bg-indigo-500 text-white rounded-md text-sm">Week</button>
+                    <button class="px-4 py-1 border rounded-md text-sm">Month</button>
+                </div>
+            </div>
+
+            <div class="h-64 flex items-end gap-4 bg-gradient-to-t from-indigo-50 to-white p-4 rounded-lg">
+                <div class="w-full bg-indigo-400 rounded-t-lg" style="height: 55%"></div>
+                <div class="w-full bg-indigo-500 rounded-t-lg" style="height: 75%"></div>
+                <div class="w-full bg-indigo-400 rounded-t-lg" style="height: 40%"></div>
+                <div class="w-full bg-indigo-600 rounded-t-lg" style="height: 85%"></div>
+                <div class="w-full bg-indigo-500 rounded-t-lg" style="height: 65%"></div>
+                <div class="w-full bg-indigo-400 rounded-t-lg" style="height: 50%"></div>
+                <div class="w-full bg-indigo-500 rounded-t-lg" style="height: 80%"></div>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Recent Activity</h3>
+            <hr><br>
+
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start bg-gray-100 p-2 rounded-lg">
+                    <div class="bg-blue-100 p-2 rounded-full ">💰</div>
+                    <div>
+                        <p class="font-bold">New sale - £129.99</p>
+                        <span class="text-sm text-gray-500">2 minutes ago</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start bg-gray-100 p-2 rounded-lg">
+                    <div class="bg-purple-100 p-2 rounded-full">👤</div>
+                    <div>
+                        <p class="font-bold">New user registered</p>
+                        <span class="text-sm text-gray-500">15 minutes ago</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start bg-gray-100 p-2 rounded-lg">
+                    <div class="bg-yellow-100 p-2 rounded-full">⚠️</div>
+                    <div>
+                        <p class="font-bold">Server warning: High CPU</p>
+                        <span class="text-sm text-gray-500">1 hour ago</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start bg-gray-100 p-2 rounded-lg">
+                    <div class="bg-blue-100 p-2 rounded-full">💰</div>
+                    <div>
+                        <p class="font-bold">New sale - £89.50</p>
+                        <span class="text-sm text-gray-500">2 hours ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
