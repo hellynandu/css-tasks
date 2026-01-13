@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complex Responsive Magazine Layout</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="output.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+
+  <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+
+
+<div class="rounded-xl p-6 bg-gradient-to-r from-pink-400 to-rose-500 text-white">
+<h1 class="text-2xl font-extrabold">Task 19: Complex Responsive Magazine Layout</h1>
+<p class="text-sm opacity-80 mt-1">Advanced asymmetric Grid with spanning elements and overlays</p>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="relative rounded-2xl overflow-hidden lg:col-span-2 md:col-span-2 h-[360px] bg-indigo-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-extrabold opacity-90">
+          Hero Story
+        </div>
+
+          <div class="absolute bottom-0 p-6 text-white">
+          <span class="inline-block text-xs font-bold bg-red-500 px-2 py-1 rounded mb-2">FEATURED</span>
+          <h2 class="text-xl font-bold">
+            The Evolution of Modern Web Design: A Deep Dive
+          </h2>
+          <p class="text-sm opacity-80 mt-1">
+            Exploring how web design has transformed over the past decade and what trends are shaping the future of digital experiences.
+          </p>
+          <p class="text-xs opacity-70 mt-2">
+            By Sarah Johnson • Dec 15, 2024 • 8 min read
+          </p>
+        </div>
+    </div>
+      <div class="relative rounded-2xl overflow-hidden h-[360px] bg-teal-400">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+          Featured
+        </div>
+
+        <div class="absolute bottom-0 p-5 text-white">
+          <span class="inline-block text-xs font-bold bg-red-500 px-2 py-1 rounded mb-2">TECHNOLOGY</span>
+          <h3 class="font-semibold">AI in Creative Industries</h3>
+          <p class="text-xs opacity-80">Mike Chen • 6 min</p>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-[260px] bg-pink-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+          Article 3
+        </div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">DESIGN</span>
+          <p class="font-semibold mt-1">Color Theory Essentials</p>
+          <p class="text-xs opacity-80">Emily Davis • 4 min</p>
+        </div>
+      </div>
+
+
+      <div class="relative rounded-2xl overflow-hidden h-[260px] bg-sky-400">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+          Article 4
+        </div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">DEVELOPMENT</span>
+          <p class="font-semibold mt-1">CSS Grid Mastery</p>
+          <p class="text-xs opacity-80">James Wilson • 5 min</p>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-[260px] bg-orange-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+          Article 5
+        </div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">BUSINESS</span>
+          <p class="font-semibold mt-1">Startup Growth Hacks</p>
+          <p class="text-xs opacity-80">Lisa Anderson • 7 min</p>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-[180px] bg-emerald-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold opacity-80">
+          Quick Read
+        </div>
+        <div class="absolute bottom-0 p-4 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">TIPS</span>
+          <p class="font-semibold">Quick Design Tips</p>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-[180px] bg-rose-600">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-5xl font-bold opacity-80">
+          News
+        </div>
+        <div class="absolute bottom-0 p-4 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">NEWS</span>
+          <p class="font-semibold">Industry Updates</p>
+        </div>
+      </div>
+
+
+      <div class="relative rounded-2xl overflow-hidden h-[180px] bg-indigo-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold opacity-80">
+          Tutorial
+        </div>
+        <div class="absolute bottom-0 p-4 text-white">
+          <span class="text-xs bg-red-500 px-2 py-1 rounded font-bold">TUTORIAL</span>
+          <p class="font-semibold">Quick Start Guide</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
